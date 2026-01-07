@@ -66,7 +66,7 @@ src/
 
 ---
 
-🧪 Usage
+## 🧪 Usage
 
 Browse products on the home page
 
@@ -83,7 +83,7 @@ Proceed to checkout
 Place order and receive confirmation
 
 
-🔮 Future Enhancements
+## 🔮 Future Enhancements
 
 Backend integration (MERN Stack)
 
