@@ -100,4 +100,4 @@ Admin dashboard
 👨‍💻 Author
 
 Aksham Rana
-MERN Developer
+(MERN Developer)
