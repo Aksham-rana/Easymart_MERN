@@ -1,0 +1,123 @@
+/* =====================
+   BACK NAV WRAPPER
+===================== */
+.backnav-wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 200;
+
+  width: 100%;
+  padding: 18px 24px;
+
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* =====================
+   BACK NAV CONTENT
+===================== */
+.backnav-content {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* =====================
+   BACK BUTTON
+===================== */
+.backnav-btn {
+  background: transparent;
+  border: none;
+
+  font-size: 16px;
+  font-weight: 600;
+  color: #4f46e5;
+
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 8px;
+
+  transition: background 0.25s ease, transform 0.2s ease;
+}
+
+.backnav-btn:hover {
+  background: rgba(79, 70, 229, 0.12);
+  transform: translateX(-2px);
+}
+
+/* =====================
+   CART BUTTON (IMPROVED)
+===================== */
+.cart-btn {
+  background: linear-gradient(135deg, #14532d, #166534);
+  color: #ffffff;
+
+  border: none;
+  padding: 9px 18px;
+  border-radius: 999px; /* pill shape */
+
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 6px 16px rgba(20, 83, 45, 0.35),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.15);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.25s ease,
+    background 0.3s ease;
+}
+
+/* Hover */
+.cart-btn:hover {
+  background: linear-gradient(135deg, #166534, #15803d);
+  transform: translateY(-2px);
+  box-shadow:
+    0 10px 24px rgba(21, 128, 61, 0.45);
+}
+
+/* Active / Click */
+.cart-btn:active {
+  transform: scale(0.96);
+  box-shadow:
+    0 4px 10px rgba(20, 83, 45, 0.4);
+}
+
+
+/* =====================
+   ACTIVE STATES
+===================== */
+.backnav-btn:active,
+.cart-btn:active {
+  transform: scale(0.97);
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 640px) {
+  .backnav-wrapper {
+    padding: 14px 16px;
+  }
+
+  .backnav-btn {
+    font-size: 15px;
+  }
+
+  .cart-btn {
+    padding: 7px 14px;
+    font-size: 13px;
+  }
+}

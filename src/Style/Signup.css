@@ -1,0 +1,141 @@
+/* =========================
+   RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   PAGE
+========================= */
+.signup-wrapper {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f9fafb;
+}
+
+/* =========================
+   FORM CARD
+========================= */
+.signup-card {
+  width: 460px;
+  padding: 42px 40px;
+  border-radius: 12px;
+  background: #ffffff;
+  border: 1px solid #e6e8ec;
+
+  box-shadow:
+    0 1px 2px rgba(0,0,0,0.04),
+    0 8px 24px rgba(0,0,0,0.06);
+}
+
+/* =========================
+   TITLE
+========================= */
+.signup-card h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 32px;
+}
+
+/* =========================
+   FORM FIELDS
+========================= */
+.signup-card div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 18px;
+}
+
+.signup-card label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.signup-card input {
+  padding: 13px 14px;
+  font-size: 0.95rem;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  outline: none;
+
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.signup-card input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37,99,235,0.12);
+}
+
+/* Error text */
+.signup-card small,
+.signup-card span {
+  font-size: 0.8rem;
+  color: #dc2626;
+}
+
+/* =========================
+   BUTTON
+========================= */
+.signup-card button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 13px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+
+  background: #2563eb;
+  color: #ffffff;
+  cursor: pointer;
+
+  transition: background 0.2s ease;
+}
+
+.signup-card button:hover {
+  background: #1d4ed8;
+}
+
+/* =========================
+   FOOTER TEXT
+========================= */
+.signup-card p {
+  margin-top: 18px;
+  text-align: center;
+  font-size: 1rem;
+  color: #6b7280;
+}
+
+.signup-card a {
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.signup-card a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 480px) {
+  .signup-card {
+    width: 90%;
+    padding: 34px;
+  }
+
+  .signup-card h1 {
+    font-size: 1.75rem;
+  }
+}

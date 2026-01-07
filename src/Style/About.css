@@ -1,0 +1,111 @@
+/* =====================
+   ABOUT PAGE WRAPPER
+===================== */
+.about-page {
+  max-width: 1000px;
+  margin: 25px auto;
+  padding: 40px 30px;
+  font-family: "Inter", "Segoe UI", sans-serif;
+  color: #1f2937;
+}
+
+/* =====================
+   PAGE TITLE
+===================== */
+.about-page h1 {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 16px;
+
+  background: linear-gradient(135deg, #4f46e5, #22c55e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Intro text */
+.about-intro {
+  max-width: 720px;
+  margin: 0 auto 50px;
+  font-size: 17px;
+  line-height: 1.8;
+  text-align: center;
+  color: #4b5563;
+}
+
+/* =====================
+   SECTIONS (CARDS)
+===================== */
+.about-section {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 28px 30px;
+  margin-bottom: 28px;
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.28);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.about-section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.08);
+}
+
+/* Section titles */
+.about-section h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #111827;
+}
+
+/* Paragraph text */
+.about-section p {
+  font-size: 15.5px;
+  line-height: 1.8;
+  color: #374151;
+}
+
+/* =====================
+   LIST STYLING
+===================== */
+.about-section ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.about-section li {
+  position: relative;
+  padding-left: 26px;
+  margin-bottom: 10px;
+  font-size: 15.5px;
+  color: #374151;
+}
+
+/* Custom bullet */
+.about-section li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #22c55e;
+  font-size: 14px;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 768px) {
+  .about-page {
+    padding: 30px 20px;
+  }
+
+  .about-page h1 {
+    font-size: 30px;
+  }
+
+  .about-section {
+    padding: 22px;
+  }
+}
