@@ -53,17 +53,18 @@ src/
    git clone https://github.com/Aksham-rana/Easymart_MERN
 
 2. Navigate to the project folder
-
-cd easymart-react
+   ```bash
+   cd easymart-react
 
 3. Install dependencies
-
-npm install
+   ```bash
+   npm install
 
 4. Start the development server
+   ```bash
+   npm run dev
 
-npm run dev
-
+---
 
 🧪 Usage
 
@@ -94,6 +95,7 @@ Wishlist feature
 
 Admin dashboard
 
+---
 
 👨‍💻 Author
 
