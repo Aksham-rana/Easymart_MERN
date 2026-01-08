@@ -1,5 +1,5 @@
 import { useCart } from "../../Context/CartContext";
-import "../../Style/addToCart.css";
+import "../../Style/AddToCart.css";
 import Navigation from "./Navigation";
 import { useNavigate } from "react-router-dom";
 
@@ -66,3 +66,4 @@ const AddToCart = () => {
 };
 
 export default AddToCart;
+
