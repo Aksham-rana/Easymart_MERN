@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useCart } from "../../Context/CartContext";
 import Navigation from "./Navigation";
-import "../../Style/buyNow.css";
+import "../../Style/BuyNow.css";
 
 const BuyNow = () => {
   const { cart } = useCart();
@@ -108,3 +108,4 @@ const BuyNow = () => {
 };
 
 export default BuyNow;
+
