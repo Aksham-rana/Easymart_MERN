@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* =====================
    PRODUCT DETAILS PAGE
    (FULL CENTER)
@@ -209,3 +210,216 @@
     max-width: 340px;
   }
 }
+=======
+/* =====================
+   PRODUCT DETAILS PAGE
+   (FULL CENTER)
+===================== */
+.pd-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f7fb;
+  padding: 40px 20px;
+}
+
+/* =====================
+   PRODUCT DETAILS CARD
+===================== */
+.pd-card {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 960px;
+  width: 100%;
+  padding: 50px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 16px 42px rgba(0, 0, 0, 0.08);
+}
+
+/* =====================
+   IMAGE
+===================== */
+.pd-image {
+  width: 320px;
+  height: 320px;
+  object-fit: contain;
+  padding: 18px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #f8f9fc, #eef1f7);
+}
+
+/* =====================
+   DETAILS
+===================== */
+.pd-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Title */
+.pd-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 14px;
+  color: #1f2937;
+}
+
+/* =====================
+   META
+===================== */
+.pd-meta {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+/* Price */
+.pd-price {
+  font-size: 26px;
+  font-weight: 700;
+  color: #16a34a;
+}
+
+/* Badges */
+.pd-rating,
+.pd-status {
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.pd-rating {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.pd-status {
+  background: #ecfeff;
+  color: #0369a1;
+}
+
+/* =====================
+   BUTTONS
+===================== */
+.pd-actions {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 30px;
+}
+
+.pd-btn {
+  padding: 14px 30px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* =====================
+   ADD TO CART - ACTIVE
+===================== */
+.pd-add-cart.pd-added {
+  background-color: #14532d;
+  color: #ffffff;
+  cursor: default;
+}
+
+.pd-add-cart.pd-added:hover {
+  background-color: #14532d;
+  transform: none;
+}
+
+
+.pd-add-cart {
+  background: #f1f5f9;
+  color: #1f2937;
+}
+
+.pd-add-cart:hover {
+  background: #e2e8f0;
+}
+
+.pd-buy-now {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: #fff;
+  box-shadow: 0 10px 22px rgba(99, 102, 241, 0.45);
+}
+
+.pd-buy-now:hover {
+  transform: translateY(-2px);
+}
+
+/* =====================
+   SECTIONS
+===================== */
+.pd-section {
+  max-width: 520px;
+  margin-bottom: 22px;
+}
+
+.pd-section-title {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #111827;
+}
+
+.pd-description {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #4b5563;
+}
+
+/* =====================
+   INFO LIST
+===================== */
+.pd-info {
+  list-style: none;
+  padding: 0;
+}
+
+.pd-info li {
+  font-size: 14px;
+  color: #374151;
+  margin-bottom: 6px;
+}
+
+/* Divider */
+.pd-divider {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 30px 0;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 768px) {
+  .pd-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .pd-meta,
+  .pd-actions {
+    justify-content: center;
+  }
+
+  .pd-image {
+    width: 100%;
+    max-width: 340px;
+  }
+}
+>>>>>>> 7c2baa7a2322bf3e6962cdc47b4efbb2fdd3508d

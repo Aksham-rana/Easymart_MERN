@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* =====================
    BUY NOW PAGE
 ===================== */
@@ -98,3 +99,105 @@
 .buy-btn:hover {
   transform: translateY(-2px);
 }
+=======
+/* =====================
+   BUY NOW PAGE
+===================== */
+.buy-page {
+  min-height: 100vh;
+  background: #f5f7fb;
+  padding: 40px 20px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.buy-container {
+  width: 100%;
+  max-width: 600px;
+  background: #ffffff;
+
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 16px 42px rgba(0, 0, 0, 0.08);
+}
+
+/* Title */
+.buy-title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+/* Sections */
+.buy-section {
+  margin-bottom: 28px;
+}
+
+.buy-section h3 {
+  font-size: 18px;
+  margin-bottom: 14px;
+  color: #111827;
+}
+
+/* Order items */
+.buy-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.buy-item-name {
+  font-weight: 500;
+}
+
+.buy-item-price {
+  font-weight: 600;
+}
+
+/* Total */
+.buy-total {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid #e5e7eb;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* Inputs */
+.buy-section input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 12px;
+
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+/* Place order button */
+.buy-btn {
+  width: 100%;
+  background: linear-gradient(135deg, #14532d, #166534);
+  color: #ffffff;
+
+  border: none;
+  padding: 14px;
+  border-radius: 999px;
+
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+
+  box-shadow: 0 10px 24px rgba(20, 83, 45, 0.4);
+  transition: transform 0.2s ease;
+}
+
+.buy-btn:hover {
+  transform: translateY(-2px);
+}
+>>>>>>> 7c2baa7a2322bf3e6962cdc47b4efbb2fdd3508d
