@@ -1,0 +1,130 @@
+/* =====================
+   PAGE CONTAINER
+===================== */
+.home {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Roboto Slab", serif;
+  background: #fdfdfd;
+  color: #333;
+}
+
+.home h1 {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-block: 2rem;
+  font-weight: 600;
+  color: #222;
+}
+
+/* =====================
+   GRID
+===================== */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.4rem;
+}
+
+/* =====================
+   PRODUCT CARD
+===================== */
+.product-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.257);
+  padding: 1.1rem;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+  min-height: 360px; /* KEY FIX */
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* =====================
+   IMAGE
+===================== */
+.img-box {
+  width: 100%;
+  height: 250px; /* REDUCED */
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 0.8rem;
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit:fit;
+  transition: transform 0.35s ease;
+}
+
+.product-card:hover .img-box img {
+  transform: scale(1.05);
+}
+
+/* =====================
+   TITLE
+===================== */
+.product-card h4 {
+  font-size: 1.05rem;
+  font-weight: 500;
+  margin: 0.6rem 0;
+  color: #444;
+
+  /* 2-line clamp */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+
+  min-height: 2.6rem;
+}
+
+/* =====================
+   INFO ROW
+===================== */
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.7rem 0 1rem;
+  font-size: 0.95rem;
+}
+
+.price {
+  font-weight: 600;
+  color: #2d6a4f;
+}
+
+.rating {
+  color: #f4a261;
+}
+
+/* =====================
+   BUTTON
+===================== */
+.product-card button {
+  margin-top: auto;
+  background: #2d6a4f;
+  color: #fff;
+  border: none;
+  padding: 0.65rem 1.4rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.product-card button:hover {
+  background: #40916c;
+  transform: scale(1.05);
+}
