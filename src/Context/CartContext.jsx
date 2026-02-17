@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { createContext, useContext, useState } from "react";
 
 const CartContext = createContext();
@@ -58,7 +57,6 @@ export const CartProvider = ({ children }) => {
 };
 
 export const useCart = () => useContext(CartContext);
-=======
 import { createContext, useContext, useState } from "react";
 
 const CartContext = createContext();
@@ -118,4 +116,4 @@ export const CartProvider = ({ children }) => {
 };
 
 export const useCart = () => useContext(CartContext);
->>>>>>> 7c2baa7a2322bf3e6962cdc47b4efbb2fdd3508d
+

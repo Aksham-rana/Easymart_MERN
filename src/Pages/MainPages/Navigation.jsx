@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { removeCurrentSession } from "../../utils/localStorage";
@@ -36,7 +35,6 @@ const Navigation = () => {
 };
 
 export default Navigation;
-=======
 import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { removeCurrentSession } from "../../utils/localStorage";
@@ -74,4 +72,4 @@ const Navigation = () => {
 };
 
 export default Navigation;
->>>>>>> 7c2baa7a2322bf3e6962cdc47b4efbb2fdd3508d
+

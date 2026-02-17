@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from 'react'
 import { getCurrentSession } from '../utils/localStorage';
 import { Navigate } from 'react-router-dom';
@@ -14,7 +13,6 @@ const ProtectedRoute = ({children}) => {
 }
 
 export default ProtectedRoute
-=======
 import React from 'react'
 import { getCurrentSession } from '../utils/localStorage';
 import { Navigate } from 'react-router-dom';
@@ -30,4 +28,4 @@ const ProtectedRoute = ({children}) => {
 }
 
 export default ProtectedRoute
->>>>>>> 7c2baa7a2322bf3e6962cdc47b4efbb2fdd3508d
+

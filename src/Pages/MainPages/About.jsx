@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from "react";
 import "../../Style/About.css";
 import Navigation from "./Navigation";
@@ -53,7 +52,6 @@ const About = () => {
 
 export default About;
 
-=======
 import React from "react";
 import "../../Style/About.css";
 import Navigation from "./Navigation";
@@ -108,4 +106,4 @@ const About = () => {
 
 export default About;
 
->>>>>>> 7c2baa7a2322bf3e6962cdc47b4efbb2fdd3508d
+

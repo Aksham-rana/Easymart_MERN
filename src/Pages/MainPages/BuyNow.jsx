@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { useState } from "react";
 import { useCart } from "../../Context/CartContext";
 import Navigation from "./Navigation";
@@ -109,7 +108,6 @@ const BuyNow = () => {
 };
 
 export default BuyNow;
-=======
 import { useState } from "react";
 import { useCart } from "../../Context/CartContext";
 import Navigation from "./Navigation";
@@ -221,4 +219,4 @@ const BuyNow = () => {
 
 export default BuyNow;
 
->>>>>>> 7c2baa7a2322bf3e6962cdc47b4efbb2fdd3508d
+

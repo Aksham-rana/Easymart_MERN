@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from 'react'
 import { useState, useEffect } from 'react'
 import '../../Style/Home.css'
@@ -47,7 +46,6 @@ const Home = () => {
 }
 
 export default Home
-=======
 import React from 'react'
 import { useState, useEffect } from 'react'
 import '../../Style/Home.css'
@@ -96,4 +94,4 @@ const Home = () => {
 }
 
 export default Home
->>>>>>> 7c2baa7a2322bf3e6962cdc47b4efbb2fdd3508d
+

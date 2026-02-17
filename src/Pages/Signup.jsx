@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { Formik, Form, Field, ErrorMessage} from "formik"
 import * as Yup from 'yup'
 import { Link } from "react-router-dom";
@@ -82,7 +81,6 @@ const Signup = () => {
 }
 
 export default Signup
-=======
 import { Formik, Form, Field, ErrorMessage} from "formik"
 import * as Yup from 'yup'
 import { Link } from "react-router-dom";
@@ -166,4 +164,4 @@ const Signup = () => {
 }
 
 export default Signup
->>>>>>> 7c2baa7a2322bf3e6962cdc47b4efbb2fdd3508d
+

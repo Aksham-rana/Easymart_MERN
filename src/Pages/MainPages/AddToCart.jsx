@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import { useCart } from "../../Context/CartContext";
 import "../../Style/addToCart.css";
 import Navigation from "./Navigation";
@@ -67,7 +66,6 @@ const AddToCart = () => {
 };
 
 export default AddToCart;
-=======
 import { useCart } from "../../Context/CartContext";
 import "../../Style/AddToCart.css";
 import Navigation from "./Navigation";
@@ -137,4 +135,4 @@ const AddToCart = () => {
 
 export default AddToCart;
 
->>>>>>> 7c2baa7a2322bf3e6962cdc47b4efbb2fdd3508d
+

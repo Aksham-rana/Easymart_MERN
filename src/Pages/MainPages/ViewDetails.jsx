@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import axios from 'axios';
 import React, { useEffect, useState} from 'react';
 import { Navigate, useParams } from 'react-router-dom';
@@ -92,7 +91,6 @@ const ViewDetails = () => {
 };
 
 export default ViewDetails;
-=======
 import axios from 'axios';
 import React, { useEffect, useState} from 'react';
 import { Navigate, useParams } from 'react-router-dom';
@@ -187,4 +185,4 @@ const ViewDetails = () => {
 
 export default ViewDetails;
 
->>>>>>> 7c2baa7a2322bf3e6962cdc47b4efbb2fdd3508d
+

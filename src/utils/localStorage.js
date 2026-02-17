@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 export const setUser =(data)=>{
   const existingUsers = JSON.parse(localStorage.getItem('users')) || [];
@@ -25,7 +24,6 @@ export const removeCurrentSession =()=>{
 
 
 
-=======
 
 export const setUser =(data)=>{
   const existingUsers = JSON.parse(localStorage.getItem('users')) || [];
@@ -52,4 +50,4 @@ export const removeCurrentSession =()=>{
 
 
 
->>>>>>> 7c2baa7a2322bf3e6962cdc47b4efbb2fdd3508d
+

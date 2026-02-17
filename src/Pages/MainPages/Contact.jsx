@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from "react";
 import "../../Style/Contact.css";
 import Navigation from "./Navigation";
@@ -66,7 +65,6 @@ const Contact = () => {
 };
 
 export default Contact;
-=======
 import React from "react";
 import "../../Style/Contact.css";
 import Navigation from "./Navigation";
@@ -134,4 +132,4 @@ const Contact = () => {
 };
 
 export default Contact;
->>>>>>> 7c2baa7a2322bf3e6962cdc47b4efbb2fdd3508d
+

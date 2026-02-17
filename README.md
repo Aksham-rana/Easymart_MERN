@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -15,7 +14,6 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
 # EasyMart React E-Commerce 🛒
 
 EasyMart is a modern, responsive e-commerce frontend application built with React. It allows users to browse products, manage a shopping cart, control product quantities, and complete a checkout flow with an order summary.
@@ -119,4 +117,4 @@ Admin dashboard
 
 Aksham Rana
 (MERN Developer)
->>>>>>> 7c2baa7a2322bf3e6962cdc47b4efbb2fdd3508d
+
