@@ -1,203 +1,312 @@
 /* =====================
-   BUY NOW PAGE
+   CHECKOUT PAGE WRAPPER
 ===================== */
 .buy-page {
   min-height: 100vh;
-  background: #f5f7fb;
+  background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
   padding: 40px 20px;
-
   display: flex;
   justify-content: center;
+  align-items: flex-start;
 }
 
-.buy-container {
-  width: 100%;
-  max-width: 600px;
-  background: #ffffff;
-
-  padding: 30px;
-  border-radius: 18px;
-  box-shadow: 0 16px 42px rgba(0, 0, 0, 0.08);
-}
-
-/* Title */
-.buy-title {
-  text-align: center;
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 30px;
-}
-
-/* Sections */
-.buy-section {
-  margin-bottom: 28px;
-}
-
-.buy-section h3 {
-  font-size: 18px;
-  margin-bottom: 14px;
-  color: #111827;
-}
-
-/* Order items */
-.buy-item {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
-}
-
-.buy-item-name {
-  font-weight: 500;
-}
-
-.buy-item-price {
-  font-weight: 600;
-}
-
-/* Total */
-.buy-total {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 16px;
-  padding-top: 12px;
-  border-top: 1px solid #e5e7eb;
-
-  font-size: 18px;
-  font-weight: 700;
-}
-
-/* Inputs */
-.buy-section input {
-  width: 100%;
-  padding: 12px 14px;
-  margin-bottom: 12px;
-
-  border-radius: 10px;
-  border: 1px solid #d1d5db;
-  font-size: 14px;
-}
-
-/* Place order button */
-.buy-btn {
-  width: 100%;
-  background: linear-gradient(135deg, #14532d, #166534);
-  color: #ffffff;
-
-  border: none;
-  padding: 14px;
-  border-radius: 999px;
-
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-
-  box-shadow: 0 10px 24px rgba(20, 83, 45, 0.4);
-  transition: transform 0.2s ease;
-}
-
-.buy-btn:hover {
-  transform: translateY(-2px);
-}
-=======
 /* =====================
-   BUY NOW PAGE
+   CHECKOUT CONTAINER
 ===================== */
-.buy-page {
-  min-height: 100vh;
-  background: #f5f7fb;
-  padding: 40px 20px;
-
-  display: flex;
-  justify-content: center;
-}
-
 .buy-container {
   width: 100%;
-  max-width: 600px;
+  max-width: 700px;
   background: #ffffff;
-
-  padding: 30px;
-  border-radius: 18px;
-  box-shadow: 0 16px 42px rgba(0, 0, 0, 0.08);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+  animation: slideIn 0.3s ease;
 }
 
-/* Title */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =====================
+   CHECKOUT TITLE
+===================== */
 .buy-title {
   text-align: center;
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 30px;
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 32px;
+  color: #111827;
+  position: relative;
+  padding-bottom: 16px;
 }
 
-/* Sections */
+.buy-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #14532d, #166534);
+  border-radius: 2px;
+}
+
+/* =====================
+   CHECKOUT SECTIONS
+===================== */
 .buy-section {
-  margin-bottom: 28px;
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.buy-section:last-of-type {
+  border-bottom: none;
 }
 
 .buy-section h3 {
   font-size: 18px;
-  margin-bottom: 14px;
+  font-weight: 700;
+  margin-bottom: 18px;
   color: #111827;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-/* Order items */
+/* =====================
+   ORDER SUMMARY
+===================== */
 .buy-item {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10px;
+  padding: 12px 0px;
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: #6b7280;
 }
 
-.buy-item-name {
-  font-weight: 500;
+.buy-item:last-child {
+  margin-bottom: 0;
 }
 
-.buy-item-price {
-  font-weight: 600;
+.buy-item p {
+  margin: 0;
 }
 
-/* Total */
+/* =====================
+   ORDER TOTAL
+===================== */
 .buy-total {
   display: flex;
   justify-content: space-between;
-  margin-top: 16px;
-  padding-top: 12px;
-  border-top: 1px solid #e5e7eb;
-
-  font-size: 18px;
-  font-weight: 700;
+  align-items: center;
+  margin-top: 18px;
+  padding: 18px 16px;
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  border-radius: 12px;
+  border: 2px solid #bbf7d0;
+  font-size: 20px;
+  font-weight: 800;
+  color: #14532d;
 }
 
-/* Inputs */
-.buy-section input {
-  width: 100%;
-  padding: 12px 14px;
-  margin-bottom: 12px;
+.buy-total span:last-child {
+  font-size: 24px;
+}
 
+/* =====================
+   FORM INPUTS
+===================== */
+.buy-section input,
+.buy-section textarea {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 14px;
   border-radius: 10px;
-  border: 1px solid #d1d5db;
+  border: 2px solid #e5e7eb;
+  font-size: 15px;
+  font-family: inherit;
+  background: #ffffff;
+  color: #111827;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.buy-section input:last-child,
+.buy-section textarea:last-child {
+  margin-bottom: 0;
+}
+
+.buy-section input::placeholder,
+.buy-section textarea::placeholder {
+  color: #9ca3af;
+}
+
+.buy-section input:focus,
+.buy-section textarea:focus {
+  outline: none;
+  border-color: #14532d;
+  background: #f9fafb;
+  box-shadow: 0 0 0 4px rgba(20, 83, 45, 0.1);
+}
+
+.buy-section textarea {
+  resize: vertical;
+  min-height: 100px;
   font-size: 14px;
 }
 
-/* Place order button */
+/* =====================
+   PLACE ORDER BUTTON
+===================== */
 .buy-btn {
   width: 100%;
-  background: linear-gradient(135deg, #14532d, #166534);
+  background: linear-gradient(135deg, #14532d 0%, #166534 100%);
   color: #ffffff;
-
   border: none;
-  padding: 14px;
-  border-radius: 999px;
-
+  padding: 16px 24px;
+  border-radius: 10px;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
-
-  box-shadow: 0 10px 24px rgba(20, 83, 45, 0.4);
-  transition: transform 0.2s ease;
+  box-shadow: 0 10px 28px rgba(20, 83, 45, 0.3);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
 .buy-btn:hover {
-  transform: translateY(-2px);
+  transform: translateY(-3px);
+  box-shadow: 0 14px 36px rgba(20, 83, 45, 0.4);
 }
->>>>>>> 7c2baa7a2322bf3e6962cdc47b4efbb2fdd3508d
 
+.buy-btn:active {
+  transform: translateY(-1px);
+}
+
+.buy-btn::before {
+  content: '';
+  font-size: 18px;
+}
+
+/* =====================
+   RESPONSIVE DESIGN
+===================== */
+@media (max-width: 768px) {
+  .buy-container {
+    padding: 30px;
+  }
+
+  .buy-title {
+    font-size: 28px;
+  }
+
+  .buy-section h3 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .buy-page {
+    padding: 20px 16px;
+  }
+
+  .buy-container {
+    padding: 20px;
+    border-radius: 16px;
+  }
+
+  .buy-title {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+
+  .buy-section {
+    margin-bottom: 24px;
+    padding-bottom: 18px;
+  }
+
+  .buy-section h3 {
+    font-size: 15px;
+    margin-bottom: 14px;
+  }
+
+  .buy-item {
+    padding: 10px 0;
+    font-size: 14px;
+  }
+
+  .buy-total {
+    padding: 14px 12px;
+    font-size: 18px;
+  }
+
+  .buy-total span:last-child {
+    font-size: 20px;
+  }
+
+  .buy-section input,
+  .buy-section textarea {
+    padding: 12px 14px;
+    margin-bottom: 12px;
+    font-size: 14px;
+  }
+
+  .buy-btn {
+    padding: 14px 20px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .buy-container {
+    padding: 16px;
+  }
+
+  .buy-title {
+    font-size: 20px;
+  }
+
+  .buy-section h3 {
+    font-size: 14px;
+  }
+
+  .buy-item {
+    font-size: 13px;
+  }
+
+  .buy-total {
+    font-size: 16px;
+    padding: 12px 10px;
+  }
+
+  .buy-total span:last-child {
+    font-size: 18px;
+  }
+
+  .buy-section input,
+  .buy-section textarea {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+
+  .buy-btn {
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+
+  .buy-btn::before {
+    display: none;
+  }
+}
