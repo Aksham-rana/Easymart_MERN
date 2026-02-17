@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState} from 'react';
 import { Navigate, useParams } from 'react-router-dom';
-import '../../Style/productDetails.css';
+import '../../Style/ProductDetails.css';
 import BackNav from './BackNav';
 import { useCart } from '../../Context/CartContext';
 import { useNavigate } from 'react-router-dom';
